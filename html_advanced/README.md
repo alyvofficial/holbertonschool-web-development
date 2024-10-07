@@ -1,6 +1,6 @@
 # holbertonschool-web-development
 # HTML_Advanced
-
+![Coding](https://firebasestorage.googleapis.com/v0/b/alyv-devv.appspot.com/o/projects%2Fgraphic%2Fcupcup-edited.png?alt=media&token=c12ef303-1b96-4a2e-9b04-d94d4235a02e)
 ## Overview
 
 This project is a basic HTML template that provides a well-structured foundation for an advanced web page layout. It includes a `header`, `main`, and `footer` section with placeholders for images, links, and text content. The structure is designed to be easily customizable for various web projects.
