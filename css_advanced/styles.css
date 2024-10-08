@@ -10,6 +10,9 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+/* Global Styles */
 .header {
   position: absolute;
   top: 0;
@@ -21,34 +24,344 @@ body {
   padding: 2em;
 }
 .header-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.7em;
-    font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 700;
 }
+
+
+/* Hero Section */
 .hero-section {
-    background: url(../images/background.png) no-repeat center center/cover;
-    padding: 7%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 50px;
+  background: url(../images/background.png) no-repeat center center/cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 15%;
 }
 .hero-title {
-    color: #fff;
-    font-size: 7em;
-    font-weight: 700;
-    text-align: center;
+  color: #fff;
+  font-size: 7em;
+  font-weight: 700;
+  text-align: center;
+}
+.hero-subtitle {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 4em;
+}
+.hero-button {
+  background: #c271ff;
+  color: #fff;
+  padding: 13px 15px;
+  border: none;
+  border-radius: 22px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Section */
+.instructors-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-title {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+.section-title span {
+  color: #c271ff;
+  font-weight: 700;
+}
+.instructors {
+  display: flex;
+  gap: 150px;
+  margin-bottom: 90px;
+}
+.instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-align: center;
+}
+.instructor-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.instructor-info {
+  width: 150px;
+  font-style: italic;
+}
+
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #c271ff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
+}
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+  color: #fff;
+}
+.testimonial-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 150px;
+}
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.testimonial-quote {
+  width: 730px;
+  font-size: 1.3em;
+}
+.testimonial-name {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.testimonial-job {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+
+/* Popular Tutorials Section */
+.popular-tutorials-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px 0;
+}
+.section-title {
+  color: #000000;
+  font-size: 2.2em;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+.tutorials {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(0, 0, 0);
+}
+.tutorial-image {
+  width: 250px;
+}
+.tutorial-title {
+  font-size: 1em;
+  margin: 0 10px;
+}
+.tutorial-description {
+  width: 242px;
+  color: rgba(7, 22, 41, 0.50);
+  margin: 0 10px;
+}
+.tutorial-instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+.instructor-image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 30px;
+}
+.instructor-name {
+  color: #c271ff;
+  font-size: 0.9em;
+}
+.tutorial-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.rating-stars {
+  display: flex;
+  gap: 5px;
+}
+.rating-stars img {
+  width: 15px;
+}
+.tutorial-duration {
+  color: #c271ff;
+}
+
+
+/* Membership Section */
+.membership-section {
+  width: 100%;
+  padding: 70px 0;
+  background-color: #071629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-title {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+.membership-options {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 90px;
+  color: white;
+  text-align: center;
+}
+.membership-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.membership-image {
+  width: 50px;
+}
+.membership-title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.membership-description {
+  font-size: 0.9em;
+  font-weight: 300;
+  width: 221px;
+}
+.register-button {
+  background: #c271ff;
+  color: #fff;
+  padding: 13px 15px;
+  border: none;
+  border-radius: 22px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FAQ Section */
+.faq-section {
+  width: 100%;
+  padding: 65px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+.section-title {
+  color: black;
+  font-size: 4.2em;
+}
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-question {
+  font-size: 0.9em;
+}
+.faq {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+.faq-answer {
+  color: rgba(7, 22, 41, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 350px;
+}
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #071629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 30px 0;
+}
+.footer-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+.footer-copy {
+  color: #ffffff67;
+  font-size: 0.7em;
+  margin-bottom: 20px;
+}
+.footer-logo-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.social-link img {
+  width: 30px;
+  margin: 0 10px;
 }
